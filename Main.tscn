@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://tile_main.tres" type="TileSet" id=1]
+[ext_resource path="res://Tocha.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Wolf.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ParallaxBackground.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Coin_Amarelo.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Coin_Roxo.tscn" type="PackedScene" id=6]
+
+[node name="Main" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 327681, 4, 0, 327682, 4, 0, 327683, 0, 0, 327684, 1, 0, 327685, 2, 0, 327686, 3, 0, 327687, 4, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 327692, 1, 0, 327693, 2, 0, 327694, 3, 0, 327695, 4, 0, 327696, 4, 0, 327697, 4, 0, 327698, 0, 0, 327699, 0, 0, 327700, 4, 0, 327701, 0, 0, 327702, 4, 0 )
+
+[node name="Node" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Tocha" parent="Node" instance=ExtResource( 2 )]
+position = Vector2( 137.18, 139.037 )
+
+[node name="Tocha7" parent="Node" instance=ExtResource( 2 )]
+position = Vector2( 497.18, 139.037 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 359.848, 110.702 )
+GRAVITY = 200
+speed = 50
+
+[node name="Node2" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Tocha2" parent="Node2" instance=ExtResource( 2 )]
+position = Vector2( 197.18, 139.037 )
+
+[node name="Tocha4" parent="Node2" instance=ExtResource( 2 )]
+position = Vector2( 317.18, 139.037 )
+
+[node name="Tocha8" parent="Node2" instance=ExtResource( 2 )]
+position = Vector2( 557.18, 139.037 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 4 )]
+
+[node name="Coins" type="Node" parent="."]
+
+[node name="Coin_Amarelo" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 228, 134 )
+
+[node name="Coin_Amarelo2" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 432, 134 )
+
+[node name="Coin_Amarelo3" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 588, 134 )
+
+[node name="Coin_Amarelo4" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 520, 134 )
+
+[node name="Coin_Roxo" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 161, 134 )
+
+[node name="Coin_Roxo2" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 371, 134 )
+
+[node name="Coin_Roxo4" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 60, 134 )
+
+[node name="Coin_Roxo3" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 631, 134 )
