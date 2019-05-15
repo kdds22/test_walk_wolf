@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coinpurple-Sheet.png-404bdcbf38fef3fb4af4351195a07b7e.stex"
+path="res://.import/pocao-purple-Sheet.png-f2b1d1724371036f9801a004b555c712.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/coinpurple-Sheet.png"
-dest_files=[ "res://.import/coinpurple-Sheet.png-404bdcbf38fef3fb4af4351195a07b7e.stex" ]
+source_file="res://assets/pocao-purple-Sheet.png"
+dest_files=[ "res://.import/pocao-purple-Sheet.png-f2b1d1724371036f9801a004b555c712.stex" ]
 
 [params]
 
